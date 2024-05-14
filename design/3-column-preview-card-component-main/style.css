@@ -1,0 +1,31 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%)}
+
+ .SEDANS{
+  background-color: hsl(31, 77%, 52%);
+ }
+.SUVs{
+  background-color: hsl(184, 100%, 22%);
+}
+.LUXURY{
+  background-color: hsl(179, 100%, 13%);
+}
+.KUNGLOA{
+  display: flex;
+  color: white;
+  width: 50%;
+  margin: 10% auto 5%;
+  border-radius: 15px 15px 0 0;
+}
+h2{
+  color: white;
+}
+.small-div {
+  width: 33.3%;
+  height: 250px;
+  padding: 1rem;
+}
+button{
+margin: 10px;
+text-align: center;
+}

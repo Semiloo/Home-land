@@ -1,0 +1,174 @@
+@font-face {
+    font-family: Inter-Bold;
+    src: url(./assets/fonts/static/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: Inter-Variable;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    font-family: 'Inter', sans-serif;
+}
+
+li {
+    width: 60%;
+    list-style: none;
+    /* gap: 10%; */
+}
+
+ul {
+    display: flex;
+    width: 100%;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    padding-bottom: 2%;
+    margin-left: 10%;
+}
+
+nav h1 {
+    width: 100%;
+    font-family: Inter-Variable;
+}
+
+img {
+    width: 100%;
+}
+
+.brown {
+    color: brown;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    /* border: 2px solid red; */
+    width: 80%;
+    margin-left: 10%;
+    gap: 25px;
+}
+
+.third {
+    width: 100%;
+}
+
+.first {
+    /* width: 70%; */
+    height: 424px;
+    /* margin-left: 5.7%; */
+}
+
+.first h2 {
+    color: rgba(255, 166, 0, 0.938);
+}
+
+.first {
+    grid-column: 2;
+    grid-row: 1/3;
+    color: white;
+    background-color: hsl(240, 100%, 5%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.first h3 {
+    color: white;
+}
+
+/* .first .small,.smaller,.smallest{
+    padding: 5%;
+
+} */
+.second {
+    grid-column: 1/3;
+    margin-top: 2.5%;
+    display: flex;
+    /* border: 10px ridge black; */
+}
+
+.second p {
+    width: 20px;
+}
+
+.third {
+    grid-column: 1;
+    display: flex;
+}
+
+.third h1 {
+    /* border: 1px red solid; */
+    width: 40%;
+    font-weight: 800;
+    font-size: 3rem;
+    font-family: ;
+
+}
+
+.third div {
+    width: 50%;
+}
+
+.third button {
+    width: 50%;
+    margin-top: 10%;
+    background-color: hsl(5, 85%, 63%);
+    height: 40px;
+    color: white;
+    border: 1px solid hsl(5, 85%, 63%);
+}
+.dan {
+    margin-left: 10%;
+}
+
+.second section {
+    width: 33.3%;
+    display: flex;
+    gap: 10px;
+}
+
+.second div {
+    padding: 5px;
+    padding-top: 3%;
+
+}
+
+.second p {
+    font-size: 12px;
+    width: 69%;
+}
+
+.second p,
+h3 {
+    color: hsl(236, 13%, 42%);
+}
+
+.second img {
+    width: 23%;
+}
+
+.first .line {
+    border: 0.5px solid hsl(233, 8%, 79%);
+    width: 97%;
+}
+
+/* MOBILE */
+@media screen and (max-width:640px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
