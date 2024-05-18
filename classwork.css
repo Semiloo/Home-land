@@ -12,6 +12,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+#rest{
+    position: absolute;
+}
+
 
 body {
     display: grid;
@@ -35,14 +39,18 @@ nav {
     width: 80%;
     padding-bottom: 2%;
     margin-left: 10%;
+    position: relative;
+
+
 }
 
 nav h1 {
     width: 100%;
     font-family: Inter-Variable;
+
 }
 
-img {
+main img {
     width: 100%;
 }
 
@@ -115,7 +123,6 @@ main {
     width: 40%;
     font-weight: 800;
     font-size: 3rem;
-    font-family: ;
 
 }
 
@@ -170,5 +177,83 @@ h3 {
 @media screen and (max-width:640px) {
     main {
         grid-template-columns: 1fr;
+        padding: 1rem;
+        margin: 0%;
+        width: 100%;
+        column-gap: 0;
+    }
+    .third {
+        grid-row: 2;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .third h1{
+        font-size: 2rem;
+        grid-row: 1;
+        width: 100%;
+        line-height: 1;
+    }
+    .third p{
+        width: 100%;
+    }
+    .first {
+        grid-row: 3;
+        grid-column: 1/2;
+        border: 1px solid red;
+        width: 100%;
+    }
+    .second {
+        flex-direction: column;
+    }
+    nav ul li{
+        display: none;
+    }
+    nav img{
+        width: 20px;
+        height: 20px;
+        right:0; 
+    }
+    .third .dan p{
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    .third .div{
+        width: 100%;
+    }
+    .third div{
+        margin:0;
+        width: 100%;
+    }
+    .third button{
+        width: 60%;
+        letter-spacing: 4px;
+        height: 50px;
+    }
+    .second{
+        width: 100%;
+        font-size: 18px;
+        row-gap: 20px;
+    }
+    .second section{
+        width: 100%;
+        gap: 20px;
+    }
+    .second h3{
+        color:  hsl(233, 8%, 79%);
+        font-size: 30px;
+        
+    }
+    .second h4{
+        font-size: 17px;
+    }
+
+    .second p{
+        font-size: 15px;
+        width: 100%;
+    }
+    .second img{
+        width: 140px;
+        height: 140px;
     }
 }
